@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Juego - El Ahorcado</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="title">EL AHORCADO</h1>
+        
+        <button class="btn" id="btnIniciar">INICIAR JUEGO</button>
+
+
+        <input type="text" class="text-input" id="inputPalabra" placeholder="Ingrese palabra para agregar en el listado" onkeypress="return /[A-Z]/i.test(event.key)" maxlength="16">
+
+        <button class="btn" id="btnAgregar">AGREGAR PALABRA</button>
+
+        <div class="container-canvas">
+            <canvas id="ahorcado" width="1200px" height="800px"></canvas>
+        </div>
+    
+        <button class="btn" id="btnReiniciar" >REINICIAR JUEGO</button>
+
+    </div>    
+
+    <footer class="footer">
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="https://www.facebook.com/fedearx" class="footer__icons" target="_blank"><img src="./images/facebook.svg" alt="facebook" class="footer__img"></a>
+                <a href="https://www.instagram.com/fedearx" class="footer__icons" target="_blank"><img src="./images/instagram.svg" alt="facebook" class="footer__img"></a>
+                <a href="https://www.twitter.com/fedearx" class="footer__icons" target="_blank"><img src="./images/twitter.svg" alt="facebook" class="footer__img"></a>
+                <a href="https://github.com/fedearx" class="footer__icons" target="_blank"><img src="./images/github.svg" alt="GitHub" class="footer__img"></a>
+            </div>
+            <h3 class="footer__copyright">Derechos reservados &copy; 2022 Federico A. Rubio</h3>
+        </section>
+    </footer>
+    
+    <script type="text/javascript" src="/js/canvas.js"></script>
+    <script type="text/javascript" src="/js/palabras.js"></script>
+    <script type="text/javascript" src="/js/jugar.js"></script>
+
+
+</body>
+</html>
